@@ -1,6 +1,3 @@
-def main():
-    print("Hello from models!")
+from modelscope.hub.snapshot_download import snapshot_download
 
-
-if __name__ == "__main__":
-    main()
+model_dir = snapshot_download('Qwen/Qwen2.5-0.5B-Instruct-GGUF', allow_patterns='qwen2.5-0.5b-instruct-q4_k_m.gguf', local_dir='d:/Projects/Models/modelscope/Qwen/Qwen2.5-0.5B-Instruct-GGUF')
